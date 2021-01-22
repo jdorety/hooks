@@ -4,7 +4,7 @@
  * Provides a state variable consisting of an array of objects
  * Will not add consecutive duplicate items
  * @param {string} storageKey 
- * @returns {[Array, (value: object) => void]}
+ * @returns {[Array, (value: object) => void]} state variable and setState function
  */
 function useLocalHistory(storageKey) {
   const storedState = localStorage.getItem(storageKey);
